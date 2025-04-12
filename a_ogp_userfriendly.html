@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta property="og:title" content="漫画サンプルギャラリー" />
+    <meta property="og:description" content="同人漫画のサンプル画像をまとめたギャラリーです。" />
+    <meta property="og:image" content="https://doujin-assets.dmm.co.jp/digital/comic/d_468031/d_468031pl.jpg" />
+    <meta property="og:url" content="https://tarou21879.github.io/dmm-doujin/a.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画サンプルギャラリー</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+
+        header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 2rem;
+        }
+
+        .cta-button {
+            background-color: #ff4b5c;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e64351;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>無料で読める漫画サンプル</h1>
+        <p>気になった作品をすぐチェック！画像をタップしてじっくり見よう📖</p>
+    </header>
+
+    <section class="gallery">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-001.jpg" alt="サンプル画像1">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-002.jpg" alt="サンプル画像2">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-003.jpg" alt="サンプル画像3">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-004.jpg" alt="サンプル画像4">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-005.jpg" alt="サンプル画像5">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-006.jpg" alt="サンプル画像6">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-007.jpg" alt="サンプル画像7">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-008.jpg" alt="サンプル画像8">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-009.jpg" alt="サンプル画像9">
+        <img src="https://doujin-assets.dmm.co.jp/digital/comic/d_542745/d_542745jp-010.jpg" alt="サンプル画像10">
+    </section>
+
+    <div class="cta-section">
+        <a class="cta-button" href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_468031%2F&af_id=hidenoriike-990&ch=api">
+            ▶ 今すぐ続きを読む
+        </a>
+    </div>
+
+    <footer>
+        © 2025 漫画ギャラリー
+    </footer>
+
+    <script>
+        const redirectUrl = "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_468031%2F&af_id=hidenoriike-990&ch=api";
+        window.addEventListener('scroll', () => {
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+                setTimeout(() => {
+                    window.location.href = redirectUrl;
+                }, 1000);
+            }
+        });
+    </script>
+
+</body>
+</html>
